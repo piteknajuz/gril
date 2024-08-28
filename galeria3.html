@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria zdjęć</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            max-width: 1200px;
+            margin: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.3s;
+        }
+
+        .gallery-item.open img {
+            opacity: 1;
+        }
+
+        .gallery-item .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            text-align: center;
+            opacity: 1;
+            transition: opacity 0.3s;
+        }
+
+        .gallery-item.open .overlay {
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+
+
+
+<nav >
+        <h2 class="duzy_tekst" >linki do galeri </h2>
+        <ul>
+		    <li><a class="duzy_biust" href="dream_gril.html">1. strona główna</a></li>
+            <li><a class="duzy_biust" href="galeria1.html">2. dream gril</a></li>
+            <li><a class="duzy_biust" href="galeria2.html">3. słodkie</a></li>
+            <li><a class="duzy_biust" href="galeria3.html">4. piękne</a></li>
+            <li><a class="duzy_biust" href="galeria4.html">5. omaga</a></li>
+        </ul>
+    </nav>
+	
+    <div class="gallery">
+        <!-- HTML for images from d101 to d150 -->
+        <div class="gallery-item" data-id="101">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d101.jpg" alt="Zdjęcie 101">
+        </div>
+        <div class="gallery-item" data-id="102">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d102.jpg" alt="Zdjęcie 102">
+        </div>
+        <div class="gallery-item" data-id="103">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d103.jpg" alt="Zdjęcie 103">
+        </div>
+        <div class="gallery-item" data-id="104">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d104.jpg" alt="Zdjęcie 104">
+        </div>
+        <div class="gallery-item" data-id="105">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d105.jpg" alt="Zdjęcie 105">
+        </div>
+        <div class="gallery-item" data-id="106">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d106.jpg" alt="Zdjęcie 106">
+        </div>
+        <div class="gallery-item" data-id="107">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d107.jpg" alt="Zdjęcie 107">
+        </div>
+        <div class="gallery-item" data-id="108">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d108.jpg" alt="Zdjęcie 108">
+        </div>
+        <div class="gallery-item" data-id="109">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d109.jpg" alt="Zdjęcie 109">
+        </div>
+        <div class="gallery-item" data-id="110">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d110.jpg" alt="Zdjęcie 110">
+        </div>
+        <div class="gallery-item" data-id="111">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d111.jpg" alt="Zdjęcie 111">
+        </div>
+        <div class="gallery-item" data-id="112">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d112.jpg" alt="Zdjęcie 112">
+        </div>
+        <div class="gallery-item" data-id="113">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d113.jpg" alt="Zdjęcie 113">
+        </div>
+        <div class="gallery-item" data-id="114">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d114.jpg" alt="Zdjęcie 114">
+        </div>
+        <div class="gallery-item" data-id="115">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d115.jpg" alt="Zdjęcie 115">
+        </div>
+        <div class="gallery-item" data-id="116">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d116.jpg" alt="Zdjęcie 116">
+        </div>
+        <div class="gallery-item" data-id="117">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d117.jpg" alt="Zdjęcie 117">
+        </div>
+        <div class="gallery-item" data-id="118">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d118.jpg" alt="Zdjęcie 118">
+        </div>
+        <div class="gallery-item" data-id="119">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d119.jpg" alt="Zdjęcie 119">
+        </div>
+        <div class="gallery-item" data-id="120">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d120.jpg" alt="Zdjęcie 120">
+        </div>
+        <div class="gallery-item" data-id="121">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d121.jpg" alt="Zdjęcie 121">
+        </div>
+        <div class="gallery-item" data-id="122">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d122.jpg" alt="Zdjęcie 122">
+        </div>
+        <div class="gallery-item" data-id="123">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d123.jpg" alt="Zdjęcie 123">
+        </div>
+        <div class="gallery-item" data-id="124">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d124.jpg" alt="Zdjęcie 124">
+        </div>
+        <div class="gallery-item" data-id="125">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d125.jpg" alt="Zdjęcie 125">
+        </div>
+        <div class="gallery-item" data-id="126">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d126.jpg" alt="Zdjęcie 126">
+        </div>
+        <div class="gallery-item" data-id="127">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d127.jpg" alt="Zdjęcie 127">
+        </div>
+        <div class="gallery-item" data-id="128">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d128.jpg" alt="Zdjęcie 128">
+        </div>
+        <div class="gallery-item" data-id="129">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d129.jpg" alt="Zdjęcie 129">
+        </div>
+        <div class="gallery-item" data-id="130">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d130.jpg" alt="Zdjęcie 130">
+        </div>
+        <div class="gallery-item" data-id="131">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d131.jpg" alt="Zdjęcie 131">
+        </div>
+        <div class="gallery-item" data-id="132">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d132.jpg" alt="Zdjęcie 132">
+        </div>
+        <div class="gallery-item" data-id="133">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d133.jpg" alt="Zdjęcie 133">
+        </div>
+        <div class="gallery-item" data-id="134">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d134.jpg" alt="Zdjęcie 134">
+        </div>
+        <div class="gallery-item" data-id="135">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d135.jpg" alt="Zdjęcie 135">
+        </div>
+        <div class="gallery-item" data-id="136">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d136.jpg" alt="Zdjęcie 136">
+        </div>
+        <div class="gallery-item" data-id="137">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d137.jpg" alt="Zdjęcie 137">
+        </div>
+        <div class="gallery-item" data-id="138">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d138.jpg" alt="Zdjęcie 138">
+        </div>
+        <div class="gallery-item" data-id="139">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d139.jpg" alt="Zdjęcie 139">
+        </div>
+        <div class="gallery-item" data-id="140">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d140.jpg" alt="Zdjęcie 140">
+        </div>
+        <div class="gallery-item" data-id="141">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d141.jpg" alt="Zdjęcie 141">
+        </div>
+        <div class="gallery-item" data-id="142">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d142.jpg" alt="Zdjęcie 142">
+        </div>
+        <div class="gallery-item" data-id="143">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d143.jpg" alt="Zdjęcie 143">
+        </div>
+        <div class="gallery-item" data-id="144">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d144.jpg" alt="Zdjęcie 144">
+        </div>
+        <div class="gallery-item" data-id="145">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d145.jpg" alt="Zdjęcie 145">
+        </div>
+        <div class="gallery-item" data-id="146">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d146.jpg" alt="Zdjęcie 146">
+        </div>
+        <div class="gallery-item" data-id="147">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d147.jpg" alt="Zdjęcie 147">
+        </div>
+        <div class="gallery-item" data-id="148">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d148.jpg" alt="Zdjęcie 148">
+        </div>
+        <div class="gallery-item" data-id="150">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d150.jpg" alt="Zdjęcie 150">
+        </div>
+    </div>
+
+     <script>
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('click', () => {
+                // Remove the overlay and add the "open" class
+                if (!item.classList.contains('open')) {
+                    item.classList.add('open');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

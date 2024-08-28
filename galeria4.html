@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria zdjęć</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            max-width: 1200px;
+            margin: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.3s;
+        }
+
+        .gallery-item.open img {
+            opacity: 1;
+        }
+
+        .gallery-item .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            text-align: center;
+            opacity: 1;
+            transition: opacity 0.3s;
+        }
+
+        .gallery-item.open .overlay {
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+
+
+<nav >
+        <h2 class="duzy_tekst" >linki do galeri </h2>
+        <ul>
+		    <li><a class="duzy_biust" href="dream_gril.html">1. strona główna</a></li>
+            <li><a class="duzy_biust" href="galeria1.html">2. dream gril</a></li>
+            <li><a class="duzy_biust" href="galeria2.html">3. słodkie</a></li>
+            <li><a class="duzy_biust" href="galeria3.html">4. piękne</a></li>
+            <li><a class="duzy_biust" href="galeria4.html">5. omaga</a></li>
+        </ul>
+    </nav>
+
+
+
+
+
+    <div class="gallery">
+        <!-- HTML for images from d151 to d165 -->
+        <div class="gallery-item" data-id="151">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d151.jpg" alt="Zdjęcie 151">
+        </div>
+        <div class="gallery-item" data-id="152">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d152.jpg" alt="Zdjęcie 152">
+        </div>
+        <div class="gallery-item" data-id="153">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d153.jpg" alt="Zdjęcie 153">
+        </div>
+        <div class="gallery-item" data-id="154">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d154.jpg" alt="Zdjęcie 154">
+        </div>
+        <div class="gallery-item" data-id="155">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d155.jpg" alt="Zdjęcie 155">
+        </div>
+        <div class="gallery-item" data-id="156">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d156.jpg" alt="Zdjęcie 156">
+        </div>
+        <div class="gallery-item" data-id="157">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d157.jpg" alt="Zdjęcie 157">
+        </div>
+        <div class="gallery-item" data-id="158">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d158.jpg" alt="Zdjęcie 158">
+        </div>
+        <div class="gallery-item" data-id="159">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d159.jpg" alt="Zdjęcie 159">
+        </div>
+        <div class="gallery-item" data-id="160">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d160.jpg" alt="Zdjęcie 160">
+        </div>
+        <div class="gallery-item" data-id="161">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d161.jpg" alt="Zdjęcie 161">
+        </div>
+        <div class="gallery-item" data-id="162">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d162.jpg" alt="Zdjęcie 162">
+        </div>
+        <div class="gallery-item" data-id="163">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d163.jpg" alt="Zdjęcie 163">
+        </div>
+        <div class="gallery-item" data-id="164">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d164.jpg" alt="Zdjęcie 164">
+        </div>
+        <div class="gallery-item" data-id="165">
+            <div class="overlay">Kliknij, aby zobaczyć zdjęcie</div>
+            <img src="d165.jpg" alt="Zdjęcie 165">
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('click', () => {
+                // Remove the overlay and add the "open" class
+                if (!item.classList.contains('open')) {
+                    item.classList.add('open');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

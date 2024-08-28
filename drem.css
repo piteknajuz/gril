@@ -1,0 +1,47 @@
+.duzy_biust{
+font-size: 20px;
+}
+.duzy_tekst{
+font-size: 24px;
+}
+body{
+font-family: Arial, sans-serif;
+color: #DB0F94;	  
+}
+.duzy{
+font-size: 12px;	
+}
+.pod_tekst{
+	 font-size: 22px;
+}
+a{
+color: #DB0F94;
+text-decoration: underline;
+text-decoration-color: #B62ADB;
+}			
+.zdj1{
+position: absolute;
+right: 450px;
+top: 50px;
+width: 500px;
+height: auto;     
+}
+
+.zdj2{
+width: 300px; /* Opcjonalnie ustaw szerokość kontenera */
+display: block; /* Ustawia każde zdjęcie w osobnym wierszu */
+width: 20%; 
+height: 297px;
+}
+			
+.zdj2 {
+    position: relative;
+    top: -778px;   /* Przesuwa element o 10px w dół */
+    left: 1480px;  
+}
+
+			
+			
+			
+			
+			
